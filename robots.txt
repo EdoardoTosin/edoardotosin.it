@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /
 Disallow: /assets/
 Disallow: /css/
-Sitemap: https://edoardotosin.me/sitemap.xml
+Sitemap: https://edoardotosin.it/sitemap.xml
