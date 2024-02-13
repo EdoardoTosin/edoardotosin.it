@@ -253,8 +253,8 @@ a {
   cursor: pointer;
   text-decoration: none; }
   a strong {
-    color: currentColor; }
-   }
+    color: currentColor;
+  }
 
 img {
   height: auto;
@@ -500,13 +500,13 @@ a.has-text-black:hover, a.has-text-black:focus {
   background-color: #0a0a0a !important; }
 
 .has-text-light {
-  color: var(--color-bg-main); !important; }
+  color: var(--color-bg-main) !important; }
 
 a.has-text-light:hover, a.has-text-light:focus {
   color: #dbdbdb !important; }
 
 .has-background-light {
-  background-color: var(--color-bg-main); !important; }
+  background-color: var(--color-bg-main) !important; }
 
 .has-text-dark {
   color: var(--color-text-main) !important; }
@@ -1022,7 +1022,7 @@ a.box-feed:active {
         }
       }
     .button.is-text:active, .button.is-text.is-active {
-      background-color: #e8e8e8;
+      background-color: var(--color-border-light);
       color: var(--color-border-dark); }
     .button.is-text[disabled],
     fieldset[disabled] .button.is-text {
@@ -1043,7 +1043,7 @@ a.box-feed:active {
   justify-content: flex-start; }
   .buttons .button {
     margin-bottom: 0.3rem;
-    padding: 1rem 1rem 1rem 0rem; }
+    padding: 1rem 1rem 1rem 1rem; }
     .buttons .button:not(:last-child):not(.is-fullwidth) {
       margin-right: 0.5rem; }
   .buttons:last-child {
@@ -1888,6 +1888,10 @@ a.tag:hover {
 .card .media:not(:last-child) {
   margin-bottom: 1rem; }
 
+.navbar-item img {
+  margin-right:  0.5rem;
+}
+
 .navbar {
   min-height: 3.25rem;
   position: relative;
@@ -2445,6 +2449,10 @@ a.navbar-item,
   .navbar-link.is-active {
     background-color: #fafafa;
     color: var(--color-text-link); }
+
+a.navbar-item:not(:hover) {
+    color: var(--color-text-main);
+}
 
 .navbar-item {
   flex-grow: 0;

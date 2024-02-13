@@ -8,8 +8,12 @@ let theme = sessionStorage.getItem('theme');
 const iconSun = "/assets/img/sun.svg";
 const iconMoon = "/assets/img/moon.svg";
 function changeIconImgSrc(src) {
-document.getElementById("theme-toggle-img").src = src;
+if (document.getElementById("theme-toggle-img") != null){
+document.getElementById("theme-toggle-img").src = src;	
+}
+if (document.getElementById("theme-toggle-img--mobile") != null){
 document.getElementById("theme-toggle-img--mobile").src = src;
+}
 }
 function iconToggle() {
 let theme = sessionStorage.getItem('theme');
